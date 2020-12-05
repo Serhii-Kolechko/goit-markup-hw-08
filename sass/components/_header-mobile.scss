@@ -1,0 +1,183 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+   
+}
+
+.navbar-portfolio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    border-bottom: 1px solid #ECECEC;
+}
+
+.webstudio {
+    margin-right: 93px;
+}
+
+.portfolio-contacts {
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.portfolio-contacts .item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.contacts {
+    padding: 0;
+    margin: 0;
+}
+
+.footer-webstudio-link {
+    text-decoration: none;
+    margin-top: 60px;
+}
+
+.webstudio-span {
+    color: $accent-color;
+
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.2;
+    /* identical to box height */
+    letter-spacing: 0.03em;
+}
+
+.webstudio-span-studio {
+    color: $title-text-color;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    /* identical to box height */
+    letter-spacing: 0.03em;
+
+}
+
+.footer-webstudio-span-studio {
+    color: $primary-white-color;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    /* identical to box height */
+    
+
+
+}
+
+.link-portfolio {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    color: $title-text-color;
+    text-decoration: none;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    letter-spacing: 0.03em;
+
+    
+   
+
+}
+
+
+.contacts {
+    display: flex;
+    margin-left: auto;
+}
+
+.contacts .item+.item {
+    margin-left: 50px;
+}
+
+/*/ теперь прописываю стили для телефона и мейла/*/
+.link-mail {
+    color: $main-text-color;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+   
+}
+
+.envelope {
+    width: 16px;
+    height: 12px;
+    fill: #757575;
+
+    margin-right: 10px;
+}
+
+.link-mail:hover {
+    color: $accent-color;
+    transition: all $time, $animate
+}
+
+.link-mail:hover .envelope,
+.link-mail:focus .envelope {
+    fill: $accent-color;
+    transition: all $time, $animate;
+}
+
+.mail-envelope {
+
+    align-items: center;
+
+}
+
+
+.contacts-phone {
+    color: $main-text-color;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.smartphone {
+    width: 10px;
+    height: 16px;
+    fill: #757575;
+    margin-right: 10px;
+}
+
+.contacts-phone:hover {
+    color: $accent-color;
+    transition: all $time, $animate
+}
+
+.contacts-phone:hover .smartphone,
+.contacts-phone:focus .smartphone {
+    fill: $accent-color;
+    transition: all $time, $animate;
+}
+
+.header>.container {
+    height: 80px;
+}
+

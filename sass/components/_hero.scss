@@ -1,6 +1,6 @@
 .hero {
     background-color: $hero-bcg-color;
-    width: 1600px;
+    
     height: 600px;
     margin-right: auto;
     margin-left: auto;
@@ -46,6 +46,7 @@
     padding-left: 452px;
     padding-right: 452px;
     padding-bottom: 30px;
+    
 
 }
 
@@ -74,5 +75,4 @@ button.hero-link {
     cursor: pointer;
     width: 200px;
     height: 50px;
-
 }

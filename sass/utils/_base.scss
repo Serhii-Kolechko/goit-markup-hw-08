@@ -1,0 +1,60 @@
+/* осановные утилиты */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+
+img {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.header>.container {
+    height: 80px;
+}
+
+.container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+/*/ здесь прописываем ховеры и фокусы /*/
+.link-portfolio:hover {
+    color: $accent-color;
+    transition: all $time, $animate;
+}
+
+.link-portfolio:focus {
+    color: $accent-color;
+    transition: all $time, $animate;
+}
+
+
+section:not(:last-child) {
+    padding-top: 60px;
+    padding-bottom: 94px;
+}
+
+.flex-container {
+
+    flex-wrap: wrap;
+    display: flex;
+    width: 1170px;
+    height: 251px;
+}

@@ -1,0 +1,59 @@
+%button-portfolio-font {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    /* identical to box height, or 162% */
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: #212121;
+}
+
+
+%button-portfolio-hover {
+    background-color: #2196F3;
+    color: white;
+    transition: all $time, $animate;
+}
+
+%base-button-portfolio-settings {
+    padding: 6px 22px;
+    min-width: 73px;
+    border-radius: 4px;
+    border: transparent;
+    background-color: #F5F4FA;
+    height: 38px;
+}
+
+%transition-text{
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 28px;
+      /* or 156% */
+      letter-spacing: 0.03em;
+
+      color: #FFFFFF;
+}
+
+%clients-title{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: #212121;
+
+}
+
+%background-svg{
+     background-size: contain;
+     background-repeat: no-repeat;
+     background-origin: border-box;
+}

@@ -1,0 +1,78 @@
+.hero {
+    background-color: $hero-bcg-color;
+    width: 1600px;
+    height: 600px;
+    margin-right: auto;
+    margin-left: auto;
+
+
+
+
+    /* padding-bottom: 91px;
+  padding-top:91px; */
+
+    text-align: center;
+    padding-bottom: 94px;
+}
+
+.overlay {
+    height: 600px;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image:
+        linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../img/background/Img-23.jpg);
+
+}
+
+.hero-title {
+    color: $primary-white-color;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.4;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    /* горизонтальная геометрия */
+    margin: 0;
+    padding-top: 106px;
+    padding-left: 452px;
+    padding-right: 452px;
+    padding-bottom: 30px;
+
+}
+
+.hero-link {
+    color: $primary-white-color;
+    background-color: $accent-color;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 0.06em;
+    text-decoration: none;
+    border-radius: 4px;
+    /* вертикальная геометрия 158пикселя */
+    display: inline-block;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+
+
+}
+
+button.hero-link {
+    border: 4px solid $accent-color;
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+
+}

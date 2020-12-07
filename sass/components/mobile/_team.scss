@@ -2,7 +2,7 @@
 .our-team {
     @media(min-width: 480px){
         padding-top: 60px;
-        width: 480px;
+        width: 450px;
         height: 2791px;
     }
 
@@ -38,21 +38,31 @@
 }
 
 .item-team {
-    width: 270px;
+    @media(min-width:480px){
+        width: 450px;
+         margin-bottom: 30px;
+    }
+    
 
-    margin-right: 30px;
+   
 
 }
 
 .item-team:nth-last-child(4n+1) {
-    margin-right: 0;
+    @media(min-width:480px){
+       margin-bottom: 0;
+    }
+    
 }
 
 .team-list {
-    display: flex;
+    @media(min-width:480px){
+    display: block;
     justify-content: space-between;
     margin-bottom: 0;
     padding-bottom: 0;
+    }
+   
 
 
 
@@ -61,8 +71,11 @@
 }
 
 .card {
-    width: 270px;
-    height: 428px;
+    @media(min-width:480px){
+        width: 450px;
+        height: 622px;
+    }
+    
     overflow: hidden;
     border: transparent;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -73,10 +86,13 @@
 
 
 .card-image {
+    @media(min-width:480px){
+        width: 450px;
+        height: 460px;
+    }
     display: block;
 
-    width: 270px;
-    height: 260px;
+    
 
 
 }
@@ -88,14 +104,16 @@
     border: transparent;
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    @media(min-width:480px){
+        padding-left: 24px;
+        padding-right: 24px;
+        padding-top: 20px;
+        padding-bottom: 30px;
 
-    padding-left: 24px;
-    padding-right: 24px;
-    padding-top: 20px;
-    padding-bottom: 30px;
-
-    width: 270px;
-    height: 168px;
+        width: 450px;
+        height: 162px;
+    }
+    
 
 
 }

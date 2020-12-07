@@ -1,7 +1,17 @@
 .hero {
     background-color: $hero-bcg-color;
-    
     height: 600px;
+     @media(min-width: 480px) {
+         width: 480px;
+     }
+
+     @media(min-width: 768px) {
+         width: 768px;
+     }
+
+     @media(min-width: 1200px) {
+         width: 1600px;
+     }
     margin-right: auto;
     margin-left: auto;
 
@@ -13,11 +23,23 @@
 
     text-align: center;
     padding-bottom: 94px;
+
+       
 }
 
 .overlay {
     height: 600px;
-    max-width: 1600px;
+     @media(min-width: 480px) {
+         width: 480px;
+     }
+
+     @media(min-width: 768px) {
+         width: 768px;
+     }
+
+     @media(min-width: 1200px) {
+         width: 1600px;
+     }
     margin-left: auto;
     margin-right: auto;
 
@@ -42,11 +64,28 @@
     text-transform: uppercase;
     /* горизонтальная геометрия */
     margin: 0;
-    padding-top: 106px;
-    padding-left: 452px;
-    padding-right: 452px;
-    padding-bottom: 30px;
-    
+    /*  телефон */
+     @media(min-width: 480px) {
+         padding-top: 118px;
+         padding-left: 60px;
+         padding-right: 60px;
+         padding-bottom: 30px;
+     }
+        /* таблетка*/ 
+     @media(min-width: 768px) {
+         padding-top: 118px;
+         padding-left: 204px;
+         padding-right: 204px;
+         padding-bottom: 30px;
+     }
+
+     @media(min-width: 1200px) {
+          padding-top: 200px;
+          padding-left: 452px;
+          padding-right: 452px;
+          padding-bottom: 30px;
+     }
+  
 
 }
 
@@ -75,4 +114,5 @@ button.hero-link {
     cursor: pointer;
     width: 200px;
     height: 50px;
+
 }

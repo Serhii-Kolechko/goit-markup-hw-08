@@ -3,7 +3,6 @@
     align-items: center;
     justify-content: center;
     height: 80px;
-   
 }
 
 .navbar-portfolio {
@@ -70,7 +69,7 @@
     font-size: 26px;
     line-height: 1.2;
     /* identical to box height */
-    
+    letter-spacing: 0.03em;
 
 
 }
@@ -88,10 +87,6 @@
     font-size: 14px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    letter-spacing: 0.03em;
-
-    
-   
 
 }
 
@@ -117,7 +112,6 @@
     text-decoration: none;
     display: flex;
     align-items: center;
-   
 }
 
 .envelope {
@@ -180,4 +174,3 @@
 .header>.container {
     height: 80px;
 }
-

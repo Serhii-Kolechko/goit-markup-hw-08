@@ -1,0 +1,153 @@
+/* клиенты */
+
+.client {
+    height: 182px;
+
+
+}
+
+.companys-container {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    width: 1200px;
+    height: 182px;
+    padding-bottom: 94px;
+    padding-top: 94px;
+    padding-right: 215px;
+    padding-left: 215px;
+
+
+
+    /* outline: 2px solid tomato; */
+}
+
+.clients-title {
+    padding-bottom: 50px;
+    margin: 0;
+
+    @extend %clients-title;
+
+}
+
+
+
+.logo-clients-one {
+    fill: #AFB1B8;
+    width: 44.27px;
+    height: 49.23px;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 63px;
+    margin-right: 63px;
+
+}
+
+.logo-clients-two {
+    fill: #AFB1B8;
+    width: 40px;
+    height: 50px;
+
+    margin-top: 19px;
+    margin-bottom: 19px;
+    margin-left: 65px;
+    margin-right: 65px;
+}
+
+.logo-clients-three {
+    fill: #AFB1B8;
+    width: 41px;
+    height: 42.6px;
+
+    margin-top: 24px;
+    margin-bottom: 24px;
+    margin-left: 65px;
+    margin-right: 65px;
+
+}
+
+.logo-clients-four {
+    fill: #AFB1B8;
+    width: 79px;
+    height: 42px;
+
+    margin-top: 23px;
+    margin-bottom: 23px;
+    margin-left: 44px;
+    margin-right: 44px;
+
+}
+
+.logo-clients-five {
+    fill: #AFB1B8;
+    width: 59px;
+    height: 47px;
+
+    margin-top: 22px;
+    margin-bottom: 21px;
+    margin-left: 56px;
+    margin-right: 55px;
+
+}
+
+.logo-clients-six {
+    fill: #AFB1B8;
+    width: 88px;
+    height: 45px;
+
+    margin-top: 22px;
+    margin-bottom: 22px;
+    margin-left: 41px;
+    margin-right: 40px;
+
+}
+
+.logo-clients:nth-last-child(6n+1) {
+    margin-right: 0;
+}
+
+.list-element {
+    /* outline: 1px solid green; */
+}
+
+.clients-link {
+    display: flex;
+
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    width: 170px;
+    height: 90px;
+    margin: 0;
+}
+
+
+
+
+.list-element:hover .logo {
+    fill: #2196F3;
+    transition: all $time, $animate;
+}
+
+.list-element:hover .clients-link {
+    border-color: #2196F3;
+    transition: all $time, $animate;
+}
+
+.list-element {
+    width: 270px;
+
+
+    margin-right: 30px;
+}
+
+.list-element:nth-last-child(6n+1) {
+    margin-right: 0;
+}
+
+
+.clients-container {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+}

@@ -1,10 +1,14 @@
 @import "./utils/_vars";
 @import "./utils/base";
+@import "./utils/placeholders";
+@import "./utils/mixins";
 @import "./components/header-mobile";
 @import "./components/hero";
 @import "./components/mobile/features";
 @import "./components/mobile/what-are-we";
 @import "./components/mobile/team";
+@import "./components/mobile/clients";
+
 
 
 

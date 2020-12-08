@@ -1,0 +1,242 @@
+.product-thumb {
+    position: relative;
+    overflow: hidden;
+}
+
+/* .product-thumb:hover::before{
+  opacity: 1;
+} */
+.product-thumb::before {
+
+    display: inline-block;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(33, 150, 243, 0.9);
+
+    opacity: 0;
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.card-portfolio:hover .product-thumb::before {
+    transform: translateY(0);
+    opacity: 1;
+    /* transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+    transition: transform all var(--time, --animate);
+
+}
+
+.transition-text {
+    padding: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 322px;
+    height: 168px;
+    opacity: 0;
+
+    transform: translateY(100%);
+    transition: transform all var(--time, --animate);
+}
+
+.card-portfolio:hover .transition-text {
+    opacity: 1;
+    transform: translateY(0);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all var(--time, --animate);
+
+
+}
+
+.transition-text p {
+    @extend %transition-text;
+}
+
+
+
+/* анимация в индекс html */
+.features-pictures {
+    position: relative;
+}
+
+.pictures-transit {
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background-color: rgba(47, 48, 58, 0.8);
+}
+
+.pictures-transit p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin: 27px 82px;
+    color: #FFFFFF;
+}
+
+.link-portfolio {
+    position: relative;
+
+    &::before {
+        display: inline-block;
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 48px;
+        height: 4px;
+        background-color: $accent-color;
+        border-radius: 2px;
+        opacity: 0;
+    }
+}
+
+.studio::before {
+    display: inline-block;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 48px;
+    height: 4px;
+    background-color: $accent-color;
+    border-radius: 2px;
+    opacity: 1;
+}
+
+.portfolio::before {
+    display: inline-block;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 78px;
+    height: 4px;
+    background-color: $accent-color;
+    border-radius: 2px;
+    opacity: 1;
+}
+
+.link-portfolio:hover::before {
+    opacity: 1;
+    transition: all var(--time, --animate);
+}
+
+.portfolio-index::before {
+    display: inline-block;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 78px;
+    height: 4px;
+    background-color: $accent-color;
+    border-radius: 2px;
+    opacity: 0;
+}
+
+.portfolio-index:hover::before {
+    opacity: 1;
+    transition: all var(--time, --animate);
+}
+
+.contact::before {
+    display: inline-block;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 68px;
+    height: 4px;
+    background-color: $accent-color;
+    border-radius: 2px;
+    opacity: 0;
+}
+
+.contact:hover::before {
+    opacity: 1;
+    transition: all var(--time, --animate);
+}
+
+
+
+.hero {
+    position: relative;
+}
+
+.backdrop {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 1600px;
+    height: 1024px;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 528px;
+    height: 581px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+
+}
+
+.close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 1px solid white;
+    background-color: #fff;
+    cursor: pointer;
+    margin-top: 8px;
+    margin-right: 8px;
+
+    @extend %background-svg;
+}
+
+.icon-close {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    fill: white;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+}
+
+.icon-close {
+    background-image: url(../img/svg/modal-close-black.svg);
+    @extend %background-svg;
+}
+
+.icon-close:hover {
+    background-image: url(../img/svg/modal-close-blue.svg);
+    @extend %background-svg;
+
+}

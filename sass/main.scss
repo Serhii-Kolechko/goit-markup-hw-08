@@ -2,12 +2,19 @@
 @import "./utils/base";
 @import "./utils/placeholders";
 @import "./utils/mixins";
+@import "./components/animation";
 @import "./components/header-mobile";
 @import "./components/hero";
 @import "./components/mobile/features";
 @import "./components/mobile/what-are-we";
 @import "./components/mobile/team";
 @import "./components/mobile/clients";
+@import "./components/mobile/footer";
+@import "./components/mobile/footer-form";
+@import "./components/mobile/modal-form";
+@import "components/mobile/backdrop";
+
+
 
 
 

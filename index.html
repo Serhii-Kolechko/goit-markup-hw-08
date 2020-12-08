@@ -22,19 +22,40 @@
     <header class="header">
         <div class="container">
             <nav class="navbar">
-                <ul class="list webstudio">
-                    <li class="item">
-                        <a class="link-portfolio" href="index.html" lang="en"><span
-                            class="webstudio-span">Web</span><span class="webstudio-span-studio">Studio</span></a>
-                    </li>
-                </ul>
-                <ul class="list portfolio-contacts">
+
+                
+                    <button type="button"
+                     class="menu-button"
+                    aria-expanded="false"
+                    aria-controls="menu-container"
+                    data-menu-button>
+                    <svg
+                    width="40"
+                    height="40"
+                    aria-label="Переключатель мобильного меню">
+               
+                   
+                        
+                    
+                        <use class="icon-cross" href='./img/svg/close-black.svg'></use>
+                        <use class="icon-menu" href="./img/svg/burger.svg"></use>
+                    </svg>
+                    
+                   
+                </button>
+                 
+
+                <div class="menu-container" id="menu-container" data-menu>
+                        <ul class="list portfolio-contacts">
                    
                        
                     
                     <li class="item"><a class="link-portfolio studio" href="">Студия</a></li>
                     <li class="item"><a class="link-portfolio portfolio-index" href="portfolio.html">Портфолио</a></li>
                     <li class="item"><a class="link-portfolio contact" href="">Контакты</a></li>
+                   
+
+
                 </ul>
 
                 <ul class="list contacts">
@@ -60,6 +81,18 @@
                             </svg>
                             +38 096 111 11 11</a></li>
                 </ul>
+                </div>
+                <ul class="list webstudio">
+                    <li class="item">
+                        <a class="link-portfolio" href="index.html" lang="en"><span
+                            class="webstudio-span">Web</span><span class="webstudio-span-studio">Studio</span></a>
+                    </li>
+                    
+                </ul>
+               
+                     
+                </div>
+               
             </nav>
         </div>
     </header>
@@ -702,7 +735,15 @@
             </div>
   
 
+            <div class="backdrop menu is-hidden" data-modal="">
+                <div class="modal">
+                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae aspernatur reiciendis nam officiis sequi dolor nobis, recusandae assumenda repellat iusto!
+                </div>
+               
+            </div>
+
      <script src="./js/modal.js"></script>
+     <script src="./js/menu.js"></script>
 </body>
 
 </html>

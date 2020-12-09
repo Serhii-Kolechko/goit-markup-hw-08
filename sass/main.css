@@ -1308,16 +1308,32 @@ h4 {
   }
 }
 
+@media (min-width: 768px) {
+  .footer-section {
+    height: 463px;
+  }
+}
+
 .footer {
   margin-bottom: 0;
   margin-right: auto;
   margin-left: auto;
-  display: block;
 }
 
 @media (min-width: 480px) {
   .footer {
     width: 480px;
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer {
+    width: 768px;
+    height: 463px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
@@ -1337,6 +1353,22 @@ h4 {
   }
 }
 
+@media (min-width: 768px) {
+  .footer-portfolio {
+    width: 768px;
+    height: 463px;
+  }
+}
+
+.adress {
+  padding-top: 60px;
+  padding-left: 76px;
+}
+
+.address-span {
+  margin-top: 20px;
+}
+
 .container-no-padding {
   padding-right: 15px;
   padding-left: 15px;
@@ -1347,6 +1379,13 @@ h4 {
 @media (min-width: 480px) {
   .container-no-padding {
     width: 480px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container-no-padding {
+    width: 768px;
+    height: 463px;
   }
 }
 
@@ -1401,6 +1440,12 @@ h4 {
   display: block;
 }
 
+@media (min-width: 768px) {
+  .address-contacts-mail {
+    padding-left: 40px;
+  }
+}
+
 .address-contacts-phone {
   font-family: Roboto;
   font-style: normal;
@@ -1414,10 +1459,32 @@ h4 {
   display: block;
 }
 
+@media (min-width: 768px) {
+  .address-contacts-phone {
+    padding-left: 40px;
+  }
+}
+
+.footer-webstudio-link {
+  padding-left: 30px;
+}
+
 /* join */
-.join {
-  margin-bottom: 70px;
-  display: block;
+@media (min-width: 480px) {
+  .join {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  .join {
+    width: 206px;
+    height: 80px;
+    margin-top: 65px;
+    margin-left: 200px;
+    margin-right: 89px;
+    margin-bottom: 318px;
+  }
 }
 
 .social-networks {
@@ -1427,6 +1494,18 @@ h4 {
 @media (min-width: 480px) {
   .social-networks {
     width: 206px;
+  }
+}
+
+@media (min-width: 768px) {
+  .social-networks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    max-width: 100%;
   }
 }
 
@@ -1440,6 +1519,12 @@ h4 {
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .footer-joinup-title {
+    margin-left: 30px;
+  }
 }
 
 .social-networks-item:not(:last-child) {

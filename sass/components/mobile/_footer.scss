@@ -7,6 +7,9 @@
     @media(min-width: 480px){
         height: 603px;
     }
+    @media(min-width:768px){
+        height: 463px;
+    }
     padding-top: 0;
     padding-bottom: 0;
 }
@@ -15,28 +18,53 @@
 
      @media(min-width: 480px) {
          width: 480px;
+         display: block;
+     }
+     @media(min-width: 768px){
+         width: 768px;
+         height: 463px;
+         display: flex;
      }
     margin-bottom: 0;
     margin-right: auto;
     margin-left: auto;
-    display: block;
+    
 }
 
 .footer-portfolio {
     padding-top: 60px;
-     @media(min-width: 480px) {
-         width: 480px;
-     }
+
+    @media(min-width: 480px) {
+        width: 480px;
+    }
+
+    @media(min-width: 768px) {
+        width: 768px;
+        height: 463px;
+    }
+
     margin-bottom: 0;
     margin-right: auto;
     margin-left: auto;
     display: flex;
 }
+.adress{
+    padding-top: 60px;
+    padding-left: 76px;
+}
+.address-span{
+    margin-top: 20px;
+}
+
 
 .container-no-padding {
      @media(min-width: 480px) {
          width: 480px;
      }
+      @media(min-width: 768px) {
+          width: 768px;
+          height: 463px;
+      }
     padding-right: 15px;
     padding-left: 15px;
     margin-left: auto;
@@ -105,6 +133,9 @@
     text-decoration: none;
     margin-bottom: 9px;
     display: block;
+    @media(min-width: 768px){
+        padding-left: 40px;
+    }
 
 
 }
@@ -122,13 +153,31 @@
     text-decoration: none;
 
     display: block;
+    @media(min-width:768px){
+        padding-left: 40px;
+    }
 
+}
+.footer-webstudio-link{
+    padding-left: 30px;
 }
 
 /* join */
 .join {
-    margin-bottom: 70px;
+    
+    @media(min-width:480px){
     display: block;
+    }
+    
+    @media(min-width:768px){
+       width: 206px;
+       height: 80px;
+       margin-top: 65px;
+       margin-left: 200px;
+       margin-right: 89px;
+       margin-bottom: 318px;
+         
+    }
 }
 
 
@@ -136,7 +185,12 @@
     @media (min-width:480px) {
         width: 206px;
     }
-   
+   @media(min-width:768px){
+       display: flex;
+       justify-content: center;
+       max-width: 100%;
+       
+   }
     
     margin-top: 20px;
 }
@@ -151,8 +205,10 @@
     line-height: 16px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    @media(min-width:768px){
+       margin-left: 30px;
 }
-
+}
 
 
 
@@ -195,5 +251,5 @@
     width: 20px;
     height: 20px;
     fill: #FFFFFF;
-
 }
+

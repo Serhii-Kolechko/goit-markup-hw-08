@@ -5,10 +5,14 @@
         width: 450px;
         height: 2791px;
     }
+    @media(min-width: 768px){
+        margin-top: 68px;
+        width: 768px;
+        height: 1285px;
+    }
 
     background-color: $team-bcg-color;
-    margin-left: auto;
-    margin-right: auto;
+    
 
 
 
@@ -17,22 +21,29 @@
 
 
 .team-title {
+     font-family: Roboto;
+     font-style: normal;
+     font-weight: bold;
+     font-size: 28px;
+     line-height: 33px;
+     text-align: center;
+     letter-spacing: 0.03em;
+
+     color: #212121;
+     
     @media(min-width: 480px){
         padding-left: 138px;
         padding-right: 138px;
 
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 28px;
-        line-height: 33px;
-        text-align: center;
-        letter-spacing: 0.03em;
-
-        color: #212121;
+       
     }
    
-    
+    @media(min-width: 768px){
+        margin-left: auto;
+        margin-right: auto;
+        
+
+    }
 
 
 }
@@ -41,6 +52,10 @@
     @media(min-width:480px){
         width: 450px;
         margin-bottom: 30px;
+    }
+    @media(min-width:768px){
+        width: 50%;
+        height: 536px; 
     }
     
 
@@ -62,6 +77,13 @@
     margin-bottom: 0;
     padding-bottom: 0;
     }
+
+    @media(min-width: 768px){
+        display: flex;
+        flex-wrap: wrap;
+
+        
+    }
    
 
 
@@ -74,9 +96,12 @@
     @media(min-width:480px){
         width: 450px;
         height: 622px;
-        
     }
     
+    @media(min-width:768px){
+        width: 354px;
+        height: 536px;
+    }
     overflow: hidden;
     border: transparent;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -90,6 +115,11 @@
     @media(min-width:480px){
         width: 450px;
         height: 460px;
+    }
+
+    @media(min-width: 768px){
+        width: 354px;
+        height: 374px;
     }
     display: block;
 
@@ -114,6 +144,11 @@
         width: 450px;
         height: 162px;
         
+    }
+    @media(min-width:768px){
+        width: 354px;
+        height: 162px;
+
     }
     
 

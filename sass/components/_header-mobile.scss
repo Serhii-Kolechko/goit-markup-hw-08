@@ -14,17 +14,32 @@
 }
 
 .webstudio {
-    margin-right: 93px;
+    margin-right: 0;
+    @media(min-width:1200px){
+        margin-right: 93px;
+    }
 }
 
 .portfolio-contacts {
     padding: 0;
     margin: 0;
-    display: flex;
+    @media(max-width:767px){
+        display: block;
+    }
+
+    @media(min-width:768px){
+        display: flex;
+        margin-left: 88px;
+    }
+    
+    
 }
 
 .portfolio-contacts .item:not(:last-child) {
-    margin-right: 50px;
+    @media(min-width:768px){
+        margin-right: 50px;
+    }
+    
 }
 
 .contacts {
@@ -43,6 +58,10 @@
     font-family: Raleway;
     font-style: normal;
     font-weight: bold;
+    @media(min-width: 768px){
+        font-size: 24px;
+        line-height: 28px;
+    }
     font-size: 26px;
     line-height: 1.2;
     /* identical to box height */
@@ -53,6 +72,10 @@
     color: $title-text-color;
     font-family: Raleway;
     font-style: normal;
+     @media(min-width: 768px) {
+         font-size: 24px;
+         line-height: 28px;
+     }
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
@@ -76,14 +99,32 @@
 
 .link-portfolio {
     display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
 
+    @media (min-width:1200px){
+        
+        padding-bottom: 32px;
+        padding-top: 32px;
+    }
+    @media(max-width:767px){
+        
+        padding-bottom: 12px;
+        margin-bottom: 40px;
+        
+    }
+    @media(min-width:768px){
+        padding-top: 32px;
+        padding-bottom: 32px;
+        
+    }
     color: $title-text-color;
     text-decoration: none;
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
+    @media(min-width:480px){
+        font-size: 18px;
+        line-height: 21,09px;
+    }
     font-size: 14px;
     line-height: 1.2;
     letter-spacing: 0.02em;
@@ -92,13 +133,23 @@
 
 
 .contacts {
-    display: flex;
-    margin-left: auto;
+    @media(min-width: 480px){
+        display: block;
+    }
+    @media(min-width: 768px){
+         display: block;
+         margin-left: auto;
+
+    }
+   
 }
 
-.contacts .item+.item {
-    margin-left: 50px;
-}
+//.contacts .item+.item {
+   // @media(min-width:768px){
+    //    margin-left: 50px;
+   // }
+    
+//}
 
 /*/ теперь прописываю стили для телефона и мейла/*/
 .link-mail {
@@ -106,12 +157,21 @@
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
+    @media(min-width:768px){
+        font-size: 12px;
+        line-height: 14px;
+        padding-top: 21px;
+        margin-left: 0;
+
+        display: block;
+    }
     font-size: 14px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     text-decoration: none;
     display: flex;
     align-items: center;
+   
 }
 
 .envelope {
@@ -145,12 +205,21 @@
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
+    @media(min-width:768px) {
+        font-size: 12px;
+        line-height: 14px;
+        margin-top: 10px;
+        margin-left: 0;
+        margin-bottom: 21px;
+        display: block;
+    }
     font-size: 14px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     text-decoration: none;
     display: flex;
     align-items: center;
+     
 }
 
 .smartphone {

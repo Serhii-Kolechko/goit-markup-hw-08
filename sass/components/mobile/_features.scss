@@ -4,6 +4,10 @@
         height: 994px;
        
     }
+    @media(min-width:768px){
+        width: 768px;
+        height: 507px;
+    }
 }
 
 .clock{
@@ -11,10 +15,17 @@
         margin: 25px 190px;
         
     }
+    @media(min-width:768px){
+        margin: 25px 142px;
+    }
 }
 .tumb {
     @media (min-width:480px) {
         width: 450px;
+        height: 120px;
+    }
+    @media(min-width:768px){
+        width: 354px;
         height: 120px;
     }
     height: 120px;
@@ -34,8 +45,12 @@
      letter-spacing: 0.03em;
      text-transform: uppercase;
     display: inline-block;
-    padding-left: 50px;
-    padding-right: 50px;
+    @media(min-width:768px){
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    
     width: 270px;
     
 
@@ -62,4 +77,15 @@
     /* or 171% */
     letter-spacing: 0.03em;
     height: 75px;
+}
+.flex-element{
+    @media(min-width: 480px){
+        width: 450px;
+        height: 226px;
+    }
+    @media(min-width:768px){
+        width: 354px;
+        height: 226px;
+        margin: 15px;
+    }
 }

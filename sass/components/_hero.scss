@@ -6,14 +6,17 @@
     height: 600px;
      @media(min-width: 480px) {
          width: 480px;
+         height: 400px;
      }
 
      @media(min-width: 768px) {
          width: 768px;
+         height: 400px;
      }
 
      @media(min-width: 1200px) {
          width: 1600px;
+         height: 600px;
      }
     margin-right: auto;
     margin-left: auto;
@@ -60,8 +63,8 @@
     font-family: Roboto;
     font-style: normal;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.4;
+     font-size: 26px;
+     line-height: 42px;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -73,6 +76,7 @@
          padding-left: 60px;
          padding-right: 60px;
          padding-bottom: 30px;
+         
      }
         /* таблетка*/ 
      @media(min-width: 768px) {
@@ -80,6 +84,8 @@
          padding-left: 204px;
          padding-right: 204px;
          padding-bottom: 30px;
+         font-size: 26px;
+         line-height: 42px;
      }
 
      @media(min-width: 1200px) {

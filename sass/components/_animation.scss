@@ -1,6 +1,9 @@
 .product-thumb {
-    position: relative;
-    overflow: hidden;
+    @media(min-width:768px){
+        position: relative;
+        overflow: hidden;
+    }
+    
 }
 
 /* .product-thumb:hover::before{

@@ -157,6 +157,14 @@
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
+    @media(min-width:480px){
+          font-size: 12px;
+          line-height: 14px;
+          padding-top: 21px;
+          margin-left: 0;
+
+          display: block;
+    }
     @media(min-width:768px){
         font-size: 12px;
         line-height: 14px;
@@ -205,6 +213,14 @@
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
+    @media(min-width:480px){
+        font-size: 12px;
+        line-height: 14px;
+        margin-top: 10px;
+        margin-left: 0;
+        margin-bottom: 21px;
+        display: block;
+    }
     @media(min-width:768px) {
         font-size: 12px;
         line-height: 14px;

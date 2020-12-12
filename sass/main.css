@@ -486,6 +486,18 @@ img {
   height: 80px;
 }
 
+@media (min-width: 480px) {
+  .navbar .container {
+    padding-top: 20px;
+  }
+}
+
+@media (min-width: 768) {
+  .navbar .container {
+    padding-top: 0;
+  }
+}
+
 @media (min-width: 1200px) {
   .navbar .container {
     padding-top: 15px;
@@ -989,6 +1001,7 @@ button.hero-link {
   .features {
     width: 738px;
     height: 994px;
+    margin-left: 15px;
   }
 }
 
@@ -1397,7 +1410,7 @@ button.hero-link {
 
 @media (min-width: 480px) {
   .card {
-    width: 450px;
+    width: 420px;
     height: 622px;
   }
 }

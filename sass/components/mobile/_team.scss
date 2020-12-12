@@ -16,8 +16,9 @@
        min-height: 1285px;
     }
     @media(min-width:1200px){
-      min-width: 1600px;
+      min-width: 1200px;
       min-height: 708px;
+      margin-top: 0;
     }
 
     background-color: $team-bcg-color;

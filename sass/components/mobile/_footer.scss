@@ -17,9 +17,11 @@
     }
     @media(min-width:1200px){
        min-height: 252px;
-       min-width: 1600px;
+       min-width: 1200px;
+       
+       padding-bottom: 0;
         display: flex;
-        margin-top: 190px;
+        
     }
     padding-top: 0;
     padding-bottom: 0;
@@ -53,8 +55,8 @@
          
      }
     margin-bottom: 0;
-    margin-right: auto;
-    margin-left: auto;
+    //margin-right: auto;
+   // margin-left: auto;
     
 }
 
@@ -77,8 +79,8 @@
         
     }
     margin-bottom: 0;
-    margin-right: auto;
-    margin-left: auto;
+   // margin-right: auto;
+   // margin-left: auto;
     display: flex;
 }
 
@@ -101,8 +103,8 @@
       }
     padding-right: 15px;
     padding-left: 15px;
-    margin-left: auto;
-    margin-right: auto;
+   // margin-left: auto;
+   // margin-right: auto;
 
 
 

@@ -57,20 +57,20 @@ img {
 
 @media (min-width: 480px) {
   .container {
-    min-width: 480px;
+    width: 480px;
     padding-bottom: 60px;
   }
 }
 
 @media (min-width: 768px) {
   .container {
-    min-width: 768px;
+    width: 768px;
   }
 }
 
 @media (min-width: 1200px) {
   .container {
-    min-width: 1200px;
+    width: 1200px;
     margin-left: auto;
     margin-right: auto;
     padding-right: 15px;
@@ -101,25 +101,24 @@ img {
 
 @media (min-width: 480px) {
   .flex-container {
-    min-width: 480px;
+    width: 480px;
   }
 }
 
 @media (min-width: 768px) {
   .flex-container {
-    min-width: 768px;
+    width: 768px;
   }
 }
 
 @media (min-width: 1200px) {
   .flex-container {
-    min-width: 1200px;
+    width: 1200px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-    padding-left: 80px;
   }
 }
 
@@ -890,9 +889,19 @@ img {
 
 @media (min-width: 1200px) {
   .hero {
-    min-width: 1600px;
+    min-width: 1200px;
     min-height: 600px;
     padding-bottom: 94px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -966,8 +975,18 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding-left: 600px;
-    padding-right: 500px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: 550px;
+    padding-right: 550px;
     padding-top: 150px;
   }
 }
@@ -996,12 +1015,6 @@ button.hero-link {
   height: 50px;
 }
 
-@media (min-width: 1200px) {
-  button.hero-link {
-    margin-left: 90px;
-  }
-}
-
 .features {
   padding-top: 60px;
   margin-right: auto;
@@ -1010,7 +1023,7 @@ button.hero-link {
 
 @media (min-width: 480px) {
   .features {
-    min-width: 738px;
+    min-width: 450px;
     min-height: 994px;
   }
 }
@@ -1082,22 +1095,22 @@ button.hero-link {
 
 @media (min-width: 480px) {
   .tumb {
-    width: 450px;
-    height: 120px;
+    min-width: 450px;
+    min-height: 120px;
   }
 }
 
 @media (min-width: 768px) {
   .tumb {
-    width: 354px;
-    height: 120px;
+    min-width: 354px;
+    min-height: 120px;
   }
 }
 
 @media (min-width: 1200px) {
   .tumb {
-    width: 270px;
-    height: 120px;
+    min-width: 270px;
+    min-height: 120px;
   }
 }
 
@@ -1110,7 +1123,7 @@ button.hero-link {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   display: inline-block;
-  width: 270px;
+  min-width: 270px;
 }
 
 @media (min-width: 768px) {
@@ -1127,8 +1140,8 @@ button.hero-link {
   .flex-element h3 {
     margin-top: 30px;
     margin-bottom: 10px;
-    margin-left: 105px;
-    margin-right: 105px;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
@@ -1153,8 +1166,8 @@ button.hero-link {
 
 .box {
   display: block;
-  width: 270px;
-  height: 75px;
+  min-width: 270px;
+  min-height: 75px;
   margin-right: 30px;
 }
 
@@ -1170,30 +1183,37 @@ button.hero-link {
 
 @media (min-width: 480px) {
   .flex-element {
-    width: 450px;
-    height: 226px;
+    min-width: 450px;
+    min-height: 226px;
   }
 }
 
 @media (min-width: 768px) {
   .flex-element {
-    width: 354px;
-    height: 251px;
+    min-width: 354px;
+    min-height: 251px;
     margin: 15px;
   }
 }
 
 @media (min-width: 1200px) {
   .flex-element {
-    width: 270px;
-    height: 101px;
-    margin-right: 30px;
+    min-width: 270px;
+    min-height: 101px;
+    margin-right: 15px;
+    margin-left: 15px;
   }
 }
 
 @media (min-width: 1200px) {
   .flex-element:nth-last-child(4n+1) {
     margin-right: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .flex-element:nth-child(1) {
+    margin-left: 0;
   }
 }
 
@@ -1244,7 +1264,6 @@ button.hero-link {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding-left: 180px;
   }
 }
 
@@ -1296,8 +1315,9 @@ button.hero-link {
 
 @media (min-width: 1200px) {
   .our-team {
-    min-width: 1600px;
+    min-width: 1200px;
     min-height: 708px;
+    margin-top: 0;
   }
 }
 
@@ -1605,7 +1625,8 @@ h4 {
   .clients {
     min-height: 182px;
     min-width: 1170px;
-    margin-left: 190px;
+    margin-left: 0;
+    margin-bottom: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1799,6 +1820,12 @@ h4 {
   }
 }
 
+@media (min-width: 1200px) {
+  .list-element:nth-child(1) {
+    margin-left: 0;
+  }
+}
+
 .clients-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1806,7 +1833,6 @@ h4 {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding-bottom: 0;
-  margin: 15px;
 }
 
 @media (min-width: 1200px) {
@@ -1856,18 +1882,16 @@ h4 {
 @media (min-width: 1200px) {
   .footer-section {
     min-height: 252px;
-    min-width: 1600px;
+    min-width: 1200px;
+    padding-bottom: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-top: 190px;
   }
 }
 
 .footer {
   margin-bottom: 0;
-  margin-right: auto;
-  margin-left: auto;
 }
 
 @media (min-width: 480px) {
@@ -1922,8 +1946,6 @@ h4 {
 .footer-portfolio {
   padding-top: 60px;
   margin-bottom: 0;
-  margin-right: auto;
-  margin-left: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1952,8 +1974,6 @@ h4 {
 .container-no-padding {
   padding-right: 15px;
   padding-left: 15px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 @media (min-width: 480px) {
@@ -2303,7 +2323,7 @@ h4 {
 
 @media (min-width: 1200px) {
   .telegram {
-    margin-right: 0;
+    margin-right: 40px;
     margin-left: 0;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
@@ -2436,6 +2456,10 @@ h4 {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
   }
 }
 

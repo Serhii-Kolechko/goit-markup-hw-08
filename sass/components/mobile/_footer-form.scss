@@ -90,8 +90,8 @@
     }
 
     @media(min-width:1200px){
-        width: 219px;
-        height: 16px;
+        min-width: 219px;
+        min-height: 16px;
         margin-right: 0;
         margin-bottom: 20px;
         margin-top: 10px;
@@ -144,6 +144,8 @@
     }
     @media(min-width:1200px){
         display: flex;
+        flex-flow: row;
+        padding-left: 0;
     }
     
 }
@@ -178,6 +180,9 @@
         margin-left: 55px;
         margin-top: 20px;
         margin-bottom: 60px;
+    }
+    @media(min-width:1200px){
+        margin: 0;
     }
 
 

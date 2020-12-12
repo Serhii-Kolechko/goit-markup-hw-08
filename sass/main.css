@@ -8,6 +8,11 @@
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 *,
@@ -1905,6 +1910,12 @@ h4 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
 }
 
@@ -2003,7 +2014,7 @@ h4 {
     display: inline-block;
     margin-bottom: 9px;
     margin-top: 20px;
-    margin-left: 50px;
+    margin-left: 0;
   }
 }
 
@@ -2045,6 +2056,12 @@ h4 {
   }
 }
 
+@media (min-width: 1200px) {
+  .address-contacts-mail {
+    padding-left: 0;
+  }
+}
+
 .address-contacts-phone {
   font-family: Roboto;
   font-style: normal;
@@ -2070,6 +2087,12 @@ h4 {
   }
 }
 
+@media (min-width: 1200px) {
+  .address-contacts-phone {
+    padding-left: 0;
+  }
+}
+
 @media (min-width: 480px) {
   .footer-webstudio-link {
     padding-left: 163px;
@@ -2080,6 +2103,13 @@ h4 {
 @media (max-width: 1199px) {
   .footer-webstudio-link {
     padding-left: 115px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer-webstudio-link {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -2095,6 +2125,13 @@ h4 {
   .address-span p {
     padding-left: 76px;
     padding-bottom: 9px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .address-span p {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -2115,7 +2152,7 @@ h4 {
 
 @media (min-width: 1200px) {
   .join {
-    margin-left: 70px;
+    margin-left: 0;
   }
 }
 
@@ -2190,6 +2227,7 @@ h4 {
   .footer-joinup-title {
     padding-left: 0;
     padding-top: 0;
+    margin-left: 10px;
   }
 }
 
@@ -2333,8 +2371,8 @@ h4 {
 
 @media (min-width: 1200px) {
   .telegram-title {
-    width: 219px;
-    height: 16px;
+    min-width: 219px;
+    min-height: 16px;
     margin-right: 0;
     margin-bottom: 20px;
     margin-top: 10px;
@@ -2406,6 +2444,11 @@ h4 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+    padding-left: 0;
   }
 }
 
@@ -2443,6 +2486,12 @@ h4 {
     margin-left: 55px;
     margin-top: 20px;
     margin-bottom: 60px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .telegram-button {
+    margin: 0;
   }
 }
 

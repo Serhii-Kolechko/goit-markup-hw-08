@@ -5,18 +5,18 @@
     background-color: $hero-bcg-color;
    
      @media(min-width: 480px) {
-         width: 480px;
-         height: 400px;
+        min-width: 480px;
+        min-height: 400px;
      }
 
      @media(min-width: 768px) {
-         width: 768px;
-         height: 400px;
+        min-width: 768px;
+        min-height: 400px;
      }
 
      @media(min-width: 1200px) {
-         width: 1600px;
-         height: 600px;
+        min-width: 1600px;
+       min-height: 600px;
          padding-bottom: 94px;
      }
     margin-right: auto;
@@ -92,8 +92,8 @@
 
      @media(min-width: 1200px) {
          display: flex;
-         padding-left: 300px;
-         padding-right: 400px;
+         padding-left: 600px;
+         padding-right: 500px;
          padding-top: 150px;
      }
   
@@ -125,5 +125,8 @@ button.hero-link {
     cursor: pointer;
     width: 200px;
     height: 50px;
+    @media(min-width:1200px){
+        margin-left: 90px;
+    }
 
 }

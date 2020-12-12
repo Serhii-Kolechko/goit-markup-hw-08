@@ -7,17 +7,17 @@
     margin-left: auto;
     @media(min-width: 480px){
         
-        width: 450px;
-        height: 2791px;
+       min-width: 450px;
+       min-height: 2791px;
     }
     @media(min-width: 768px){
         margin-top: 100px;
-        width: 768px;
-        height: 1285px;
+       min-width: 768px;
+       min-height: 1285px;
     }
     @media(min-width:1200px){
-        width: 1600px;
-        height: 708px;
+      min-width: 1600px;
+      min-height: 708px;
     }
 
     background-color: $team-bcg-color;
@@ -31,7 +31,7 @@
          margin-left: auto;
          margin-right: auto;
          margin-top: 0;
-         width: 1200px;
+        min-width: 1200px;
     }
 }
 

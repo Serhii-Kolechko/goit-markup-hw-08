@@ -4,19 +4,20 @@
     margin-right: auto;
     margin-left: auto;
     @media (min-width:480px){
-        width: 738px;
-        height: 994px;
-        margin-left: 15px;
+        min-width: 738px;
+       min-height: 994px;
+        
        
     }
     @media(min-width:768px){
-        width: 768px;
-        height: 507px;
+       min-width: 768px;
+       min-height: 507px;
     }
     @media(min-width:1200px){
-        width: 1200px;
-        height: 294px;
-
+        min-width: 1200px;
+        min-height: 294px;
+         flex-wrap: wrap;
+         display: flex;
         
     }
 }
@@ -25,8 +26,8 @@
     @media(min-width:1200px){
         flex-wrap: wrap;
         display: flex;
-        width: 1170px;
-        height: 294px;
+       min-width: 1170px;
+       min-height: 294px;
         
     }
     

@@ -13,13 +13,14 @@
          flex-direction: column-reverse;
          margin-left: auto;
          margin-right: auto;
-         
-        
-
 
      }
     @media(min-width:1200px){
-        margin-left: 93px;
+        margin-right: 0;
+        margin-left: 0;
+        justify-content: flex-end;
+
+        
         width: 570px;
         height: 86px;
     }
@@ -27,17 +28,17 @@
    
 }
 
-//.telegram-links {
+.telegram-links {
+    @media(min-width:1200px){
+    margin: 0;
+   padding: 0;
+   width: 0;
+   margin-left: 20px;
+   margin-top: 20px;
+ }
     
-   // margin: 0;
-   // padding: 0;
-   // width: 0;
-   // margin-left: 20px;
-   // margin-top: 20px;
-   // @media(min-width:768px){
-
-   // }
-//}
+   
+}
 
 .footer-telegram {
     width: 200px;
@@ -88,8 +89,14 @@
         
     }
 
-    @media(min-width:768px){
-        
+    @media(min-width:1200px){
+        width: 219px;
+        height: 16px;
+        margin-right: 0;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        margin-left: 0;
+        padding-left: 0;
     }
 
 }
@@ -110,12 +117,13 @@
         display: block;
     }
     @media(min-width:1200px){
-        display: flex;
-        flex-wrap: wrap;
+          margin-bottom: 0;
+          display: flex;
+          width: 44px;
+          flex-wrap: wrap;
 
-        align-items: center;
-        padding-bottom: 0;
-        width: 44px;
+          align-items: center;
+          padding-bottom: 0;
     }
     
     
@@ -166,7 +174,7 @@
         
         
     }
-    @media (min-width:768px){
+    @media (max-width:1199px){
         margin-left: 55px;
         margin-top: 20px;
         margin-bottom: 60px;

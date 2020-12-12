@@ -15,6 +15,12 @@
         height: 463px;
         padding-top: 60px;
     }
+    @media(min-width:1200px){
+        height: 252px;
+        width: 1600px;
+        display: flex;
+        margin-top: 190px;
+    }
     padding-top: 0;
     padding-bottom: 0;
 }
@@ -37,11 +43,19 @@
          flex-wrap: wrap;
         
      }
+
+     @media(min-width:1200px){
+         width: 1230px;
+         height: 252px;
+         display: flex;
+         
+     }
     margin-bottom: 0;
     margin-right: auto;
     margin-left: auto;
     
 }
+
 
 .footer-portfolio {
     padding-top: 60px;
@@ -55,6 +69,11 @@
         height: 463px;
     }
 
+    @media(min-width:1200px){
+        padding-top: 60px;
+        width: 1230px;
+        
+    }
     margin-bottom: 0;
     margin-right: auto;
     margin-left: auto;
@@ -73,6 +92,11 @@
           width: 768px;
           height: 463px;
       }
+      @media(min-width:1200px){
+          width: 1200px;
+          height: 252px;
+          
+      }
     padding-right: 15px;
     padding-left: 15px;
     margin-left: auto;
@@ -89,6 +113,9 @@
     @media(min-width:768px){
         display: block;
         
+    }
+    @media(min-width:1200px){
+        display: inline-flex;
     }
     
 }
@@ -112,6 +139,12 @@
     line-height: 1.7;
     /* or 171% */
     letter-spacing: 0.03em;
+    @media(min-width:1200px){
+        display: inline-block;
+        margin-bottom: 9px;
+        margin-top: 20px;
+        margin-left: 50px;
+    }
    
 
     
@@ -150,9 +183,10 @@
         padding-left: 170px;
         
     }
-    @media(min-width: 768px){
+    @media(max-width: 1199px){
         padding-left: 120px;
     }
+
 
 
 }
@@ -173,7 +207,7 @@
     @media(min-width:480px){
         padding-left: 170px;
     }
-    @media(min-width:768px){
+    @media(max-width:1199px){
         padding-left: 120px;
     }
 
@@ -184,10 +218,11 @@
         padding-right: 163px;
         
     }
-    @media(min-width:768px){
+    @media(max-width:1199px){
         padding-left: 115px;
 
     }
+    
  
 }
 .address-span p{
@@ -219,12 +254,11 @@
       // margin-left: 200px;
       // margin-right: 89px;
       // margin-bottom: 318px;
-     
 
-
-      
-      
-         
+  
+    }
+    @media(min-width:1200px){
+      margin-left: 70px;
     }
 }
 
@@ -244,6 +278,12 @@
        
    }
     
+   @media(min-width:1200px){
+        display: flex;
+        justify-content: center;
+        max-width: 100%;
+        margin-top: 20px;
+   }
     margin-top: 20px;
 }
 
@@ -261,9 +301,13 @@
         padding-left: 170px;
         padding-top: 60px;
     }
-   @media(min-width:768px){
+   @media(max-width:1199px){
        padding: 0;
        padding-left: 20px;
+   }
+   @media(min-width:1200px){
+       padding-left:0;
+       padding-top: 0;
    }
 
 }

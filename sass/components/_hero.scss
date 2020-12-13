@@ -17,10 +17,13 @@
      @media(min-width: 1200px) {
         min-width: 1200px;
        min-height: 600px;
+       padding-left: 0;
+       padding-right: 0;
          padding-bottom: 94px;
          flex-direction: column;
          justify-content: center;
          align-items: center;
+         text-align: center;
      }
     margin-right: auto;
     margin-left: auto;
@@ -38,17 +41,17 @@
 }
 
 .overlay {
-    height: 600px;
+    min-height: 600px;
      @media(min-width: 480px) {
-         width: 480px;
+         min-width: 480px;
      }
 
      @media(min-width: 768px) {
-         width: 768px;
+         min-width: 768px;
      }
 
      @media(min-width: 1200px) {
-         width: 1600px;
+         min-width: 1600px;
          
      }
     margin-left: auto;
@@ -74,34 +77,60 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
     /* горизонтальная геометрия */
-    margin: 0;
+    margin: 0 auto;
     /*  телефон */
      @media(min-width: 480px) {
          padding-top: 118px;
-         padding-left: 60px;
-         padding-right: 60px;
+         min-width: 360px;
          padding-bottom: 30px;
+
+         font-family: Roboto;
+         font-style: normal;
+         font-weight: 900;
+         font-size: 26px;
+         line-height: 42px;
+         /* or 162% */
+         text-align: center;
+         letter-spacing: 0.06em;
+         text-transform: uppercase;
+
          
      }
         /* таблетка*/ 
      @media(min-width: 768px) {
          padding-top: 118px;
-         padding-left: 204px;
-         padding-right: 204px;
+         
          padding-bottom: 30px;
+        
+         min-width: 360px;
+
+
+         font-family: Roboto;
+         font-style: normal;
+         font-weight: 900;
          font-size: 26px;
          line-height: 42px;
+         /* or 162% */
+         text-align: center;
+         letter-spacing: 0.06em;
+         text-transform: uppercase;
      }
   
 
      @media(min-width: 1200px) {
-         display: flex;
-         flex-direction: column;
-         justify-content: center;
-         align-items: center;
-        padding-left: 550px;
-        padding-right: 550px;
+        
+        min-width: 696px;
         padding-top: 150px;
+
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 60px;
+        /* or 136% */
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
      }
   
 

@@ -901,6 +901,8 @@ img {
   .hero {
     min-width: 1200px;
     min-height: 600px;
+    padding-left: 0;
+    padding-right: 0;
     padding-bottom: 94px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -912,11 +914,12 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    text-align: center;
   }
 }
 
 .overlay {
-  height: 600px;
+  min-height: 600px;
   margin-left: auto;
   margin-right: auto;
   background-size: cover;
@@ -928,19 +931,19 @@ img {
 
 @media (min-width: 480px) {
   .overlay {
-    width: 480px;
+    min-width: 480px;
   }
 }
 
 @media (min-width: 768px) {
   .overlay {
-    width: 768px;
+    min-width: 768px;
   }
 }
 
 @media (min-width: 1200px) {
   .overlay {
-    width: 1600px;
+    min-width: 1600px;
   }
 }
 
@@ -955,7 +958,7 @@ img {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   /* горизонтальная геометрия */
-  margin: 0;
+  margin: 0 auto;
   /*  телефон */
   /* таблетка*/
 }
@@ -963,41 +966,50 @@ img {
 @media (min-width: 480px) {
   .hero-title {
     padding-top: 118px;
-    padding-left: 60px;
-    padding-right: 60px;
+    min-width: 360px;
     padding-bottom: 30px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 42px;
+    /* or 162% */
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
   }
 }
 
 @media (min-width: 768px) {
   .hero-title {
     padding-top: 118px;
-    padding-left: 204px;
-    padding-right: 204px;
     padding-bottom: 30px;
+    min-width: 360px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
     font-size: 26px;
     line-height: 42px;
+    /* or 162% */
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
   }
 }
 
 @media (min-width: 1200px) {
   .hero-title {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding-left: 550px;
-    padding-right: 550px;
+    min-width: 696px;
     padding-top: 150px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+    /* or 136% */
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
   }
 }
 

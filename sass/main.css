@@ -966,7 +966,7 @@ img {
 @media (min-width: 480px) {
   .hero-title {
     padding-top: 118px;
-    min-width: 360px;
+    width: 360px;
     padding-bottom: 30px;
     font-family: Roboto;
     font-style: normal;
@@ -984,7 +984,7 @@ img {
   .hero-title {
     padding-top: 118px;
     padding-bottom: 30px;
-    min-width: 360px;
+    width: 360px;
     font-family: Roboto;
     font-style: normal;
     font-weight: 900;
@@ -999,7 +999,7 @@ img {
 
 @media (min-width: 1200px) {
   .hero-title {
-    min-width: 696px;
+    width: 696px;
     padding-top: 150px;
     font-family: Roboto;
     font-style: normal;

@@ -27,3 +27,71 @@ margin-right: 30px
 @import "./components/animation";
 @import "./components/modal-form";
 @import "components/footer-form";
+
+.card-portfolio:nth-last-child(-n+3) {
+@media(min-width:480px){
+margin-bottom: 0;
+}
+@media(min-width:768px){
+margin-bottom: 30px;
+}
+@media(min-width:1200px){
+margin-bottom: 0;
+
+    }
+
+}
+
+.card-portfolio:nth-last-child(3n+1) {
+@media(min-width:480px){
+margin-right: 0;
+}
+@media(min-width:768px){
+margin-right: 0;
+}
+@media(min-width:1200px){
+margin-right: 0;
+margin-left: 15px;
+
+    }
+
+}
+
+.card-portfolio:nth-child(2n){
+@media(min-width:768px){
+margin-right:0
+}
+}
+.card-portfolio:nth-child(2n+1) {
+@media(min-width:768px) {
+margin-right: 15px;
+}
+}
+
+.card-image-portfolio {
+display: block;
+@media(min-width:480px){
+margin-right: 0;
+width: 450px;
+height: 294px;
+}
+@media(min-width:1200px){
+display: block;
+}
+
+}
+
+.card-portfolio:nth-child(2n+1){
+@media(min-width:480px){
+margin-right: 0;
+margin-left:0;
+}
+@media(min-width:768px){
+margin-right: 15px;
+margin-left:0;
+}
+@media(min-width:1200px){
+
+    }
+
+}

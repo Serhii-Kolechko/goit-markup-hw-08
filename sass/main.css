@@ -528,7 +528,7 @@ img {
 
 @media (min-width: 1200px) {
   .webstudio {
-    margin-right: 93px;
+    margin-right: 0;
   }
 }
 
@@ -560,6 +560,7 @@ img {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
+    margin-left: 90px;
   }
 }
 
@@ -708,12 +709,15 @@ img {
     display: -ms-flexbox;
     display: flex;
     margin-left: auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
 @media (min-width: 1200px) {
   .contacts .item + .item {
-    margin-left: 50px;
+    margin-left: 0;
   }
 }
 
@@ -757,6 +761,8 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    padding: 0;
+    margin: 0;
   }
 }
 
@@ -837,6 +843,8 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin: 0;
+    padding: 0;
   }
 }
 
@@ -1852,10 +1860,6 @@ h4 {
 .clietns-title-clients {
   padding-bottom: 50px;
   margin: 0;
-}
-
-.footer-section {
-  padding-top: 60px;
 }
 
 .footer-section {

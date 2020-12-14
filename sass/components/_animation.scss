@@ -110,7 +110,10 @@
         position: absolute;
         bottom: 0;
         left: 0;
-        width: 62px;
+        @media(min-width:1200px){
+            width: 48px;
+        }
+        
         height: 4px;
         background-color: $accent-color;
         border-radius: 2px;
@@ -125,12 +128,14 @@
     bottom: 0;
     @media(min-width:480px){
     left: 195px;
+     width: 62px;
     }
     @media(min-width:1200px){
         left: 0;
+        width: 48px;
     }
    
-    width: 62px;
+   
     height: 4px;
     background-color: $accent-color;
     border-radius: 2px;
@@ -143,7 +148,10 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 98px;
+    @media(min-width:1200px){
+        width: 76px;
+    }
+    
     height: 4px;
     background-color: $accent-color;
     border-radius: 2px;
@@ -165,6 +173,7 @@
     }
     @media(min-width:1200px){
         left: 0;
+        width:76px;
     }
 
     left: 165px;
@@ -190,6 +199,7 @@
     }
     @media(min-width: 1200px){
         left: 0;
+        width:67px;
     }
     left: 170px;
     width: 86px;

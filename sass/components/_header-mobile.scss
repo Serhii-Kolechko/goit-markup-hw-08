@@ -129,20 +129,7 @@
 .link-portfolio {
     display: block;
 
-    @media (min-width:1200px){
-        
-        padding-bottom: 32px;
-        padding-top: 32px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 16px;
-        letter-spacing: 0.02em;
-
-        color: #212121;
-
-    }
+   
     @media(max-width:767px){
         
         padding-bottom: 12px;
@@ -163,6 +150,21 @@
         font-size: 18px;
         line-height: 21,09px;
     }
+
+     @media (min-width:1200px) {
+
+         padding-bottom: 32px;
+         padding-top: 32px;
+         font-family: Roboto;
+         font-style: normal;
+         font-weight: 500;
+         font-size: 14px;
+         line-height: 16px;
+         letter-spacing: 0.02em;
+
+         color: #212121;
+
+     }
     font-size: 14px;
     line-height: 1.2;
     letter-spacing: 0.02em;

@@ -311,11 +311,16 @@ img {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 62px;
   height: 4px;
   background-color: #2196f3;
   border-radius: 2px;
   opacity: 0;
+}
+
+@media (min-width: 1200px) {
+  .link-portfolio::before {
+    width: 48px;
+  }
 }
 
 .studio::before {
@@ -323,7 +328,6 @@ img {
   content: "";
   position: absolute;
   bottom: 0;
-  width: 62px;
   height: 4px;
   background-color: #2196f3;
   border-radius: 2px;
@@ -333,12 +337,14 @@ img {
 @media (min-width: 480px) {
   .studio::before {
     left: 195px;
+    width: 62px;
   }
 }
 
 @media (min-width: 1200px) {
   .studio::before {
     left: 0;
+    width: 48px;
   }
 }
 
@@ -348,11 +354,16 @@ img {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 98px;
   height: 4px;
   background-color: #2196f3;
   border-radius: 2px;
   opacity: 1;
+}
+
+@media (min-width: 1200px) {
+  .portfolio::before {
+    width: 76px;
+  }
 }
 
 .link-portfolio:hover::before {
@@ -383,6 +394,7 @@ img {
 @media (min-width: 1200px) {
   .portfolio-index::before {
     left: 0;
+    width: 76px;
   }
 }
 
@@ -414,6 +426,7 @@ img {
 @media (min-width: 1200px) {
   .contact::before {
     left: 0;
+    width: 67px;
   }
 }
 
@@ -667,20 +680,6 @@ img {
   letter-spacing: 0.02em;
 }
 
-@media (min-width: 1200px) {
-  .link-portfolio {
-    padding-bottom: 32px;
-    padding-top: 32px;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.02em;
-    color: #212121;
-  }
-}
-
 @media (max-width: 767px) {
   .link-portfolio {
     padding-bottom: 12px;
@@ -699,6 +698,20 @@ img {
   .link-portfolio {
     font-size: 18px;
     line-height: 21,09px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .link-portfolio {
+    padding-bottom: 32px;
+    padding-top: 32px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: #212121;
   }
 }
 
@@ -2204,6 +2217,10 @@ h4 {
     display: block;
     width: 206px;
     height: 80px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin-bottom: 60px;
   }
 }
 

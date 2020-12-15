@@ -104,21 +104,7 @@
     position: relative;
     
 
-    &::before {
-        display: inline-block;
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        @media(min-width:1200px){
-            width: 48px;
-        }
-        
-        height: 4px;
-        background-color: $accent-color;
-        border-radius: 2px;
-        opacity: 0;
-    }
+   
 }
 
 .studio::before {
@@ -141,6 +127,7 @@
     border-radius: 2px;
     opacity: 1;
 }
+
 
 .portfolio::before {
     display: inline-block;
@@ -183,12 +170,59 @@
     border-radius: 2px;
     opacity: 0;
 }
+.blue::before{
+       display: inline-block;
+       content: "";
+       position: absolute;
+       bottom: 0;
 
+       @media(min-width:480px) {
+           left: 180px;
+       }
+
+       @media(min-width:1200px) {
+           left: 0;
+           width: 76px;
+       }
+
+       left: 165px;
+       width: 98px;
+       height: 4px;
+       background-color: $accent-color;
+       border-radius: 2px;
+       opacity: 1;
+}
 .portfolio-index:hover::before {
     opacity: 1;
     transition: all var(--time, --animate);
 }
 
+.studio-blue::before {
+    display: inline-block;
+    content: "";
+    position: absolute;
+    bottom: 0;
+
+    @media(min-width:480px) {
+        left: 195px;
+        width: 62px;
+    }
+
+    @media(min-width:1200px) {
+        left: 0;
+        width: 48px;
+    }
+
+
+    height: 4px;
+    background-color: $accent-color;
+    border-radius: 2px;
+    opacity: 0;
+}
+.studio-blue:hover::before{
+      opacity: 1;
+      transition: all var(--time, --animate);
+}
 .contact::before {
     display: inline-block;
     content: "";

@@ -305,24 +305,6 @@ img {
   position: relative;
 }
 
-.link-portfolio::before {
-  display: inline-block;
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 4px;
-  background-color: #2196f3;
-  border-radius: 2px;
-  opacity: 0;
-}
-
-@media (min-width: 1200px) {
-  .link-portfolio::before {
-    width: 48px;
-  }
-}
-
 .studio::before {
   display: inline-block;
   content: "";
@@ -398,7 +380,64 @@ img {
   }
 }
 
+.blue::before {
+  display: inline-block;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 165px;
+  width: 98px;
+  height: 4px;
+  background-color: #2196f3;
+  border-radius: 2px;
+  opacity: 1;
+}
+
+@media (min-width: 480px) {
+  .blue::before {
+    left: 180px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .blue::before {
+    left: 0;
+    width: 76px;
+  }
+}
+
 .portfolio-index:hover::before {
+  opacity: 1;
+  -webkit-transition: all var(--time, --animate);
+  transition: all var(--time, --animate);
+}
+
+.studio-blue::before {
+  display: inline-block;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 4px;
+  background-color: #2196f3;
+  border-radius: 2px;
+  opacity: 0;
+}
+
+@media (min-width: 480px) {
+  .studio-blue::before {
+    left: 195px;
+    width: 62px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .studio-blue::before {
+    left: 0;
+    width: 48px;
+  }
+}
+
+.studio-blue:hover::before {
   opacity: 1;
   -webkit-transition: all var(--time, --animate);
   transition: all var(--time, --animate);

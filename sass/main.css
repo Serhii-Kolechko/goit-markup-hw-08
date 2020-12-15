@@ -505,7 +505,7 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  min-height: 80px;
+  height: 80px;
 }
 
 @media (min-width: 480px) {

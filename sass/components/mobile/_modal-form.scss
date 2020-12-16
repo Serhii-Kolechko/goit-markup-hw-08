@@ -20,6 +20,10 @@ textarea {
 
 
     color: #757575;
+    @media(min-width:768px){
+        top: 275px;
+        
+    }
 }
 
 .form {
@@ -32,6 +36,15 @@ textarea {
     padding-left: 40px;
     padding-right: 40px;
     padding-bottom: 40px;
+    @media(min-width:768px){
+        width:450px;
+        height: 609px;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        padding: 0;
+       
+    }
 }
 
 .form-label-span {
@@ -56,6 +69,12 @@ textarea {
     margin-bottom: 22px;
     width: 448px;
     height: 23px;
+    @media(min-width:768px){
+         width: 370px;
+         height: 60px;
+         margin-bottom: 12px;
+         margin-top: 40px;
+    }
 }
 
 .form-field {

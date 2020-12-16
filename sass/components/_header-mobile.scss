@@ -27,6 +27,9 @@
 
 .webstudio {
     margin-right: 0;
+    @media(min-width:768px){
+        margin-left: 0;
+    }
     @media(min-width:1200px){
         margin-left: 100px;
     }
@@ -37,6 +40,9 @@
     margin: 0;
     @media(max-width:767px){
         display: block;
+        width: 294px;
+        height: 48px;
+        
     }
 
     @media(min-width:768px){
@@ -130,15 +136,22 @@
     display: block;
 
    
-    @media(max-width:767px){
-        
-        padding-bottom: 12px;
-        margin-bottom: 40px;
-        
+    @media(min-width:480px) {
+        font-size: 18px;
+        line-height: 21, 09px;
     }
     @media(min-width:768px){
         padding-top: 32px;
         padding-bottom: 32px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.02em;
+        color: #212121;
+        
+
         
     }
     color: $title-text-color;
@@ -146,10 +159,7 @@
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
-    @media(min-width:480px){
-        font-size: 18px;
-        line-height: 21,09px;
-    }
+    
 
      @media (min-width:1200px) {
 
@@ -178,7 +188,7 @@
     }
     @media(min-width: 768px){
          display: block;
-         margin-left: auto;
+         margin-left: 84px;
 
     }
     @media(min-width:1200px){
@@ -243,8 +253,14 @@
     width: 16px;
     height: 12px;
     fill: #757575;
+    @media(min-width:768px){
+        margin-right: 0;
+    }
+    @media(min-width:1200px){
+        margin-right: 10px;
+    }
 
-    margin-right: 10px;
+    
 }
 
 .link-mail:hover {
@@ -279,6 +295,7 @@
         display: block;
     }
     @media(min-width:768px) {
+        
         font-size: 12px;
         line-height: 14px;
         margin-top: 10px;

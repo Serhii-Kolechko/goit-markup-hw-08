@@ -64,17 +64,17 @@
     padding-top: 60px;
 
     @media(min-width: 480px) {
-        width: 480px;
+        min-width: 480px;
     }
 
     @media(min-width: 768px) {
-        width: 768px;
-        height: 463px;
+        min-width: 768px;
+        min-height: 463px;
     }
 
     @media(min-width:1200px){
         padding-top: 60px;
-        width: 1230px;
+        min-width: 1230px;
         
     }
     margin-bottom: 0;

@@ -326,7 +326,7 @@ img {
 @media (min-width: 768px) {
   .studio::before {
     left: 0;
-    width: 62px;
+    width: 46.63px;
   }
 }
 

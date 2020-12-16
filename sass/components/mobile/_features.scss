@@ -150,12 +150,12 @@
 
 .flex-element{
     @media(min-width: 480px){
-        min-width: 450px;
-        min-height: 226px;
+        width: 450px;
+        height: 226px;
     }
     @media(min-width:768px){
-        min-width: 354px;
-        min-height: 251px;
+        width: 354px;
+        height: 251px;
         margin: 15px;
     }
     @media(min-width:1200px){

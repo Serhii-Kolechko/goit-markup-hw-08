@@ -28,6 +28,12 @@
 
 }
 .team-container{
+    @media(min-width:480px){
+         margin-left: auto;
+         margin-right: auto;
+         margin-top: 0;
+         
+    }
     @media(min-width:1200px){
          margin-left: auto;
          margin-right: auto;
@@ -72,8 +78,9 @@
 
 .item-team {
     @media(min-width:480px){
-        width: 450px;
+        min-width: 450px;
         margin-bottom: 30px;
+        margin-right: 0;
     }
     @media(min-width:768px){
         width: 354px;
@@ -91,6 +98,7 @@
 .item-team:nth-last-child(4n+1) {
     @media(min-width:480px){
        margin-bottom: 0;
+       margin-right: 0;
     }
     @media(min-width:1200px){
         margin-right:0;
@@ -109,6 +117,7 @@
     @media(min-width: 768px){
         display: flex;
         flex-wrap: wrap;
+        
   
     }
     @media(min-width:1200px){
@@ -127,8 +136,8 @@
 
 .card {
     @media(min-width:480px){
-        width: 420px;
-        height: 622px;
+        min-width: 420px;
+        min-height: 622px;
     }
     
     @media(min-width:768px){
@@ -150,8 +159,8 @@
 
 .card-image {
     @media(min-width:480px){
-        width: 450px;
-        height: 460px;
+        min-width: 450px;
+        min-height: 460px;
     }
 
     @media(min-width: 768px){

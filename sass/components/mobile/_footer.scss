@@ -3,9 +3,9 @@
 .footer-section {
     background-color: #2f303a;
     @media(min-width: 480px){
-       min-height: 663px;
+       min-height: 603px;
        
-        padding-bottom: 60px;
+        
         
     }
     @media(min-width:768px){
@@ -31,7 +31,7 @@
 
      @media(min-width: 480px) {
         min-width: 480px;
-         display: block;
+         display: flex;
          flex-direction: column;
 
          align-items: center;
@@ -116,10 +116,20 @@
     padding-bottom: 52px;
 
 }
-
+.footer-address{
+    @media(min-width:480px){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
 .address{
     @media(min-width:768px){
-        display: block;
+        display: flex;
+        min-width: 232px;
+        height: 79px;
+        flex-direction: column;
+        align-items: center;
         
     }
     @media(min-width:1200px){
@@ -189,10 +199,10 @@
     margin-bottom: 9px;
     display: block;
     @media(min-width:480px){
-        padding-left: 170px;
+        padding-left: 0;
         
     }
-    @media(max-width: 1199px){
+    @media(min-width: 768px){
         padding-left: 120px;
     }
 
@@ -219,10 +229,10 @@
 
     display: block;
     @media(min-width:480px){
-        padding-left: 170px;
+        padding-left: 0;
     }
-    @media(max-width:1199px){
-        padding-left: 120px;
+    @media(min-width:768px){
+        padding-left: 0;
     }
     @media(min-width:1200px){
         padding-left: 0;
@@ -231,11 +241,12 @@
 }
 .footer-webstudio-link{
     @media(min-width:480px){
-        padding-left: 163px;
-        padding-right: 163px;
+        padding: 0;
+        padding-left: 0;
+        margin-left: 40px;
         
     }
-    @media(max-width:1199px){
+    @media(min-width:768px){
         padding-left: 115px;
 
     }
@@ -249,9 +260,9 @@
 }
 .address-span p{
     @media(min-width:480px){
-         padding-left: 124px;
-         padding-right: 124px;
-         padding-top: 20px;
+         padding-left: 0;
+         padding-right: 0;
+         padding-top: 0;
     }
     @media(min-width:768px){
         padding-left: 76px;
@@ -273,7 +284,8 @@
 .join {
     
     @media(min-width:480px){
-    display: block;
+    display: flex;
+    flex-direction: column;
     }
     
     @media(min-width:768px){
@@ -332,8 +344,9 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     @media(min-width:480px){
-        padding-left: 170px;
-        padding-top: 60px;
+        padding-left: 0;
+        align-self: center;
+        padding-top: 0;
     }
    @media(min-width:768px){
        padding: 0;

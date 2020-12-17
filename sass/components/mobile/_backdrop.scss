@@ -37,10 +37,15 @@
     padding: 0;
     border: none;
     background-color: transparent;
-    outline: 2px solid blue;
+    width: 24px;
+    height: 16px;
+    margin-top: 22px;
     position: absolute;
     top: 10px;
-    right: -20px;
+    right: 0;
+    background-image: url(/img/svg/burger.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
     @media screen and(min-width: 768px){
         display: none;
     }
@@ -50,10 +55,17 @@
     display: none;
 }
 
-.menu-button.is-open .icon-cross{
+.menu-button.is-open{
     display: block;
+    background-image: url(/img/svg/cross.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 24px;
+    height: 16px;
 }
-
+.menu-button:hover{
+    fill: var($accent-color);
+}
 .menu-button.is-open .icon-menu{
     display: none;
 }

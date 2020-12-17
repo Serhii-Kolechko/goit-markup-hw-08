@@ -185,7 +185,11 @@
 .list-element {
     @media(min-width: 480px){
         min-width: 210px;
-         margin-bottom: 30px;
+        margin-bottom: 30px;
+        margin-right: 0;
+        margin-right: 0;
+        display: flex;
+        flex-wrap: wrap;
     }   
     @media(min-width:768px){
         width: 226px;
@@ -213,10 +217,24 @@
         
     }
 } 
-.list-element:nth-child(5) {
+
+.list-element:nth-child(3) {
     @media(min-width:768px) {
+        
+        margin-right: 15px;
+        
+    }
+
+    @media(min-width:1200px) {
         margin-left: 15px;
         margin-right: 15px;
+    }
+}
+.list-element:nth-child(5) {
+    @media(min-width:768px) {
+        
+        margin-right: 15px;
+        
     }
     @media(min-width:1200px){
         margin-left: 15px;
@@ -226,7 +244,11 @@
 
 
 
+
 .list-element:nth-last-child(6n+1) {
+    @media(min-width:768px){
+        margin-right: 0;
+    }
     @media(min-width:1200px){
         margin-right: 0; 
     }
@@ -234,6 +256,9 @@
 }
 
 .list-element:nth-child(1){
+    @media(min-width:768px) {
+        margin-left: 0;
+    }
    @media(min-width:1200px) {
        margin-left: 0;
    }

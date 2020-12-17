@@ -103,6 +103,11 @@
         padding-left: 0;
         
     }
+    @media(min-width:768px){
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
 
     @media(min-width:1200px){
         min-width: 219px;

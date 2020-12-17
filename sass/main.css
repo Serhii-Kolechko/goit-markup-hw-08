@@ -1572,8 +1572,8 @@ button.hero-link {
 
 @media (min-width: 768px) {
   .item-team {
-    width: 354px;
-    height: 536px;
+    min-width: 354px;
+    min-height: 536px;
   }
 }
 
@@ -1708,8 +1708,8 @@ button.hero-link {
 
 @media (min-width: 768px) {
   .card-content {
-    width: 354px;
-    height: 162px;
+    min-width: 354px;
+    min-height: 162px;
   }
 }
 
@@ -1967,6 +1967,13 @@ h4 {
   .list-element {
     min-width: 210px;
     margin-bottom: 30px;
+    margin-right: 0;
+    margin-right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
@@ -2002,8 +2009,20 @@ h4 {
 }
 
 @media (min-width: 768px) {
-  .list-element:nth-child(5) {
+  .list-element:nth-child(3) {
+    margin-right: 15px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .list-element:nth-child(3) {
     margin-left: 15px;
+    margin-right: 15px;
+  }
+}
+
+@media (min-width: 768px) {
+  .list-element:nth-child(5) {
     margin-right: 15px;
   }
 }
@@ -2012,12 +2031,24 @@ h4 {
   .list-element:nth-child(5) {
     margin-left: 15px;
     margin-right: 15px;
+  }
+}
+
+@media (min-width: 768px) {
+  .list-element:nth-last-child(6n+1) {
+    margin-right: 0;
   }
 }
 
 @media (min-width: 1200px) {
   .list-element:nth-last-child(6n+1) {
     margin-right: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .list-element:nth-child(1) {
+    margin-left: 0;
   }
 }
 
@@ -2122,6 +2153,8 @@ h4 {
             align-items: end;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 
@@ -2299,7 +2332,7 @@ h4 {
 
 @media (min-width: 768px) {
   .address-contacts-mail {
-    padding-left: 120px;
+    padding-left: 0;
   }
 }
 
@@ -2351,7 +2384,8 @@ h4 {
 
 @media (min-width: 768px) {
   .footer-webstudio-link {
-    padding-left: 115px;
+    padding-left: 0;
+    margin-left: 40px;
   }
 }
 
@@ -2372,8 +2406,8 @@ h4 {
 
 @media (min-width: 768px) {
   .address-span p {
-    padding-left: 76px;
-    padding-bottom: 9px;
+    padding-left: 0;
+    padding-bottom: 0;
   }
 }
 
@@ -2403,13 +2437,18 @@ h4 {
 
 @media (min-width: 768px) {
   .join {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 206px;
     height: 80px;
     -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
         align-self: center;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
   }
 }
 
@@ -2486,7 +2525,9 @@ h4 {
 @media (min-width: 768px) {
   .footer-joinup-title {
     padding: 0;
-    padding-left: 20px;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -2649,6 +2690,18 @@ h4 {
 @media (min-width: 480px) {
   .telegram-title {
     padding-left: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .telegram-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 20px;
   }
 }
 

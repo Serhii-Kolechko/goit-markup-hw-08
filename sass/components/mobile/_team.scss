@@ -83,8 +83,8 @@
         margin-right: 0;
     }
     @media(min-width:768px){
-        width: 354px;
-        height: 536px; 
+        min-width: 354px;
+        min-height: 536px; 
     }
     @media(min-width:1200px){
         width: 270px;
@@ -138,6 +138,7 @@
     @media(min-width:480px){
         min-width: 420px;
         min-height: 622px;
+       
     }
     
     @media(min-width:768px){
@@ -196,8 +197,8 @@
         
     }
     @media(min-width:768px){
-        width: 354px;
-        height: 162px;
+        min-width: 354px;
+        min-height: 162px;
 
     }
     @media(min-width:1200px){

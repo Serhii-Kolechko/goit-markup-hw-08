@@ -57,6 +57,7 @@
     @media(min-width:1200px){
         display: flex;
         align-items: baseline;
+        flex-direction: row;
         margin-left: 90px;
     }
     
@@ -72,6 +73,7 @@
     }
     @media(min-width:1200px){
         margin-right: 50px;
+        margin-bottom: 0;
     }
 }
 
@@ -216,6 +218,7 @@
         display: flex;
         margin-left: auto;
         align-items: center;
+        flex-direction: row;
         margin-left: 144px;
     }
    
